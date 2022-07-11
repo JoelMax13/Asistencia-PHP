@@ -1,0 +1,12 @@
+/* Sistema General */
+nav{
+    background-color: skyblue;
+}
+h1{
+    text-align: center;
+}
+
+/* Crear Usuario */
+.C_U_container{
+    margin-top: 2rem;
+}
