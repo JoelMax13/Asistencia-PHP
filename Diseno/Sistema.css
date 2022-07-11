@@ -5,6 +5,9 @@ nav{
 h1{
     text-align: center;
 }
+ul{
+    padding: 0rem;
+}
 
 /* Crear Usuario */
 .C_U_container{

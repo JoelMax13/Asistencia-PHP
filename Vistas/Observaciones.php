@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistencia 1</title>
+    <title>Observaciones</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="Diseno/Sistema.css" type="text/css" rel="stylesheet">
+    <link href="../Diseno/Sistema.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,10 +49,19 @@
                 <li class="mb-3 row">
                     <label class="col-sm-4 col-form-label">Luis Andrés Naranjo Rodriguez</label>
                     <div class="col-sm-3">
-                        <select class="form-select">
-                            <option value="1">Presente</option>
-                            <option value="0">Ausente</option>
+                    <select class="form-select">
+                            <option value="">---</option>
+                            <option value="">Descanso de jornada</option>
+                            <option value="">Falta justificada</option>
+                            <option value="">Falta injustificada</option>
+                            <option value="">Jornada nocturna</option>
+                            <option value="">Días sobre jornada</option>
+                            <option value="">Liquidación</option>
                         </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
+                        <input class="form-control"></input>
                     </div>
                 </li>
             </ul>
