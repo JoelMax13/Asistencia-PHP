@@ -18,42 +18,42 @@
     <form action="../Controladores/RegistrarUsuario.php" method="POST">
         <div class="container C_U_container">
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Cedula: </label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Cedula: </label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="Cedula"></input>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Nombres Apellidos:</label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Nombres Apellidos:</label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="NombresApellidos"/>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Teléfono:</label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Teléfono:</label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="Telf"/>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Cargo:</label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Cargo:</label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="Cargo"/>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Jornada:</label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Jornada:</label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="Jornada"/>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Proyecto:</label>
-                <div class="col-sm-10">
+                <label class="col-sm-4 col-form-label C_U_label">Proyecto:</label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="Proyecto"/>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success">Crear Usuario Nuevo</button>
+            <button type="submit" class="btn btn-success BtnFinProc">Crear Usuario Nuevo</button>
         </div>
     </form>
 </body>

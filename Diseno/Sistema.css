@@ -1,6 +1,7 @@
 /* Sistema General */
 nav{
-    background-color: skyblue;
+    background-color: skyblue; 
+    padding-bottom: 0.5%;
 }
 h1{
     text-align: center;
@@ -8,8 +9,30 @@ h1{
 ul{
     padding: 0rem;
 }
-
+.infoBasic{
+    width: 100%;
+    margin-left: 5%;
+}
+.BtnFinProc{
+    float:right;
+}
+.container{
+    margin-top: 2rem;
+}
 /* Crear Usuario */
 .C_U_container{
-    margin-top: 2rem;
+    width: 50%;
+}
+.C_U_label{
+    text-align:justify;
+}
+
+/* Asistencia */
+.A_container{
+    width: 70%;
+}
+
+/* Observaciones */
+.O_container{
+    width: 80%;
 }

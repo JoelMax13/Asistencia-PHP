@@ -13,13 +13,20 @@
 
 <body>
     <nav>
-        <h1>Observaciones: </h1>
-        <p>
-            Fecha:
-        </p>
+        <h1>Observaciones</h1>
+        <label class="infoBasic">
+            <strong>Fecha:</strong>
+            <?php
+                $Date = date('m-d-Y');  
+                echo $Date;
+            ?>
+        </label>
+        <label class="infoBasic">
+            <strong>Personal a cargo:</strong>
+        </label>
     </nav>
-    <form action="Controladores/RegistrarAsistencia.php" method="POST">
-        <div class="container">
+    <form action="../Controladores/RegistrarObservaciones.php" method="POST">
+        <div class="container O_container">
             <!-- Mostrar Lista de personas -->
             <ul>
                 <li class="mb-3 row">
@@ -41,7 +48,7 @@
                             <option value="">Liquidación</option>
                         </select>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
                         <input class="form-control"></input>
                     </div>
@@ -59,13 +66,13 @@
                             <option value="">Liquidación</option>
                         </select>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
                         <input class="form-control"></input>
                     </div>
                 </li>
             </ul>
-            <button type="submit" class="btn btn-success">Guardar</button>
+            <button type="submit" class="btn btn-success BtnFinProc">Guardar</button>
         </div>
     </form>
 </body>

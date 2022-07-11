@@ -14,20 +14,24 @@
 <body>
     <nav>
         <h1>Asistencia registrada por: </h1>
-        <p>
-            Fecha:
+        <label class="infoBasic">
+            <strong>Fecha:</strong>
             <?php
-                echo "prueba";
+                $Date = date('m-d-Y');  
+                echo $Date;
             ?>
-        </p>
+        </label>
+        <label class="infoBasic">
+            <strong>Personal a cargo:</strong>
+        </label>
     </nav>
-    <form action="Controladores/RegistrarAsistencia.php" method="POST">
-        <div class="container">
+    <form action="../Controladores/RegistrarAsistencia.php" method="POST">
+        <div class="container A_container">
             <!-- Mostrar Lista de personas -->
             <ul>
                 <li class="mb-3 row">
-                    <label class="col-sm-4 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                    <div class="col-sm-6">
+                    <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
+                    <div class="col-sm-7">
                         <select class="form-select">
                             <option value="1">Presente</option>
                             <option value="0">Ausente</option>
@@ -35,8 +39,8 @@
                     </div>
                 </li>
                 <li class="mb-3 row">
-                    <label class="col-sm-4 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                    <div class="col-sm-6">
+                    <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
+                    <div class="col-sm-7">
                         <select class="form-select">
                             <option value="1">Presente</option>
                             <option value="0">Ausente</option>
