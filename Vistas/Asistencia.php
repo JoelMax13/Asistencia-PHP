@@ -17,8 +17,9 @@
         <label class="infoBasic">
             <strong>Fecha:</strong>
             <?php
-                $Date = date('m-d-Y');  
-                echo $Date;
+                session_start();
+                $_SESSION['fechaActual'] = date('Y-m-d');  
+                echo $_SESSION['fechaActual'];
             ?>
         </label>
         <label class="infoBasic">
