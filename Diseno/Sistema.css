@@ -1,10 +1,27 @@
 /* Sistema General */
 nav{
-    background-color: skyblue; 
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    height: 10vh;
+}
+.body{
+    margin-top: 10vh;
+    display: block;
+}
+.pagEncabezado{
+    /* background-color: #c5a8f3; */
+    /* font-family: sans-serif;
+    color: #0D5A8E; */
     padding-bottom: 0.5%;
 }
 h1{
     text-align: center;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #0D5A8E;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
 }
 ul{
     padding: 0rem;
@@ -19,6 +36,8 @@ ul{
 .container{
     margin-top: 2rem;
 }
+
+
 /* Crear Usuario */
 .C_U_container{
     width: 50%;
