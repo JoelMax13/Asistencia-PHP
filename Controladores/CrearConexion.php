@@ -1,6 +1,7 @@
 <?php
 session_start();
     $_SESSION['registrador'] = "Luis Joel Oña Méndez";
+    $_SESSION['fechaActual'] = date('Y-m-d'); 
     $usuario = "root";
     $contrasena = "";
     $server = "localhost";

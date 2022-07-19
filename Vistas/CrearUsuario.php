@@ -19,11 +19,12 @@
 
 <body>
     <?php
+        include ("../Controladores/CrearConexion.php");
         require("MenuPrincipal.php");
     ?>
 
     <div class="body">
-        <div class="pagEncabezado">
+        <div>
             <h1>Registrar Nuevo Usuario</h1>
         </div>
         <form action="../Controladores/RegistrarUsuario.php" method="POST">
