@@ -1,3 +1,18 @@
+<?php
+    include ("../Controladores/CrearConexion.php");
+    function ObtenerIdProyecto($conexion, $proyecto){
+        //Obtener Id Proyecto
+        $Select_ProId = "Select PRO_ID from tbl_proyecto where (PRO_NOMBRE = '{$proyecto}')";
+        $OBJ_PRO_ID = mysqli_query($conexion, $Select_ProId);
+        $ARR_PRO_ID = mysqli_fetch_assoc($OBJ_PRO_ID);
+        $PRO_ID = implode($ARR_PRO_ID);
+        return $PRO_ID;
+    }
+
+
+    $Pro_Nombre = $_GET['nombre'];
+    $PRO_ID = ObtenerIdProyecto($conexion, $Pro_Nombre);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +31,7 @@
 
 <body>
 <?php
+    
     include ("MenuPrincipal.php");
 ?>
     <div class="body">
@@ -24,8 +40,6 @@
             <label class="infoBasic">
                 <strong>Fecha:</strong>
                 <?php
-                    session_start();
-                    $_SESSION['fechaActual'] = date('Y-m-d');  
                     echo $_SESSION['fechaActual'];
                 ?>
             </label>
@@ -41,225 +55,33 @@
             <div class="container A_container">
                 <!-- Mostrar Lista de personas -->
                 <ul>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <label class="col-sm-4 col-form-label text-start">Proyecto Z</label>
-                        <div class="col-sm-3">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-4 col-form-label">José Fernando Maldonado Matamoros</label>
-                        <label class="col-sm-4 col-form-label text-center">Proyecto A</label>
-                        <div class="col-sm-4">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li class="mb-3 row">
-                        <label class="col-sm-5 col-form-label">Luis Andrés Naranjo Rodriguez</label>
-                        <div class="col-sm-7">
-                            <select class="form-select">
-                                <option value="1">Presente</option>
-                                <option value="0">Ausente</option>
-                            </select>
-                        </div>
-                    </li>
-                </ul>
+
+                    <?php
+                        $select = "SELECT USU_NOMAPE FROM `tbl_usuario` as USU 
+                                    LEFT JOIN tbl_usuario_proyecto as USPR 
+                                    ON (USU.USU_ID = USPR.USU_ID) WHERE (USPR.PRO_ID = '{$PRO_ID}'); ";
+                        $result = mysqli_query($conexion, $select);
+
+                        if (mysqli_num_rows($result) > 0) {
+                            // output data of each row
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo 
+                                '<li class="mb-3 row">
+                                    <label class="col-sm-5 col-form-label">'.$row["USU_NOMAPE"].'</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-select">
+                                            <option value="1">Presente</option>
+                                            <option value="0">Ausente</option>
+                                        </select>
+                                    </div>
+                                </li>';
+                            }
+                          } else {
+                            echo "0 results";
+                          }
+                    ?>
+
+                 </ul>
                 <button type="submit" class="btn btn-success BtnFinProc">Registrar</button>
             </div>
         </form>
