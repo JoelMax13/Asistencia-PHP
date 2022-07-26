@@ -65,7 +65,7 @@
                         }
                     ?>
                 </ul>
-                <button type="submit" class="btn btn-success BtnFinProc">Registrar</button>
+                <button type="submit" class="btn btn-success BtnFinProc <?php echo $mostrarBoton ?>">Registrar</button>
             </div>
         </form>
     </div>
