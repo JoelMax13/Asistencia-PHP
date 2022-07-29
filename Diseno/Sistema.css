@@ -1,16 +1,19 @@
 /* Sistema General */
+.mayusculas{
+    text-transform: uppercase;
+}
 nav{
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-    height: 10vh;
+     /* height: 10vh; */
 }
 .body{
     margin-top: 10vh;
     display: block;
 }
+.imagenMenu{
+    width: 5.5rem;
+}
 .pagEncabezado{
-    /* background-color: #c5a8f3; */
-    /* font-family: sans-serif;
-    color: #0D5A8E; */
     padding-bottom: 0.5%;
 }
 h1{
@@ -40,7 +43,7 @@ ul{
 
 /* Crear Usuario */
 .C_U_container{
-    width: 50%;
+    width: 80%;
 }
 .C_U_label{
     text-align:justify;
@@ -54,4 +57,75 @@ ul{
 /* Observaciones */
 .O_container{
     width: 80%;
+}
+
+/* Horas Extra */
+.HE_container{
+    width: 60%;
+}
+
+/* Informes */
+.btns{
+    border-radius: 50%;
+}
+.imagen{
+    width: 10rem;
+}
+.izquierda{
+    width: 25%;
+}
+.centro{
+    /* width: 34%; */
+    text-align: center;
+}
+.derecha{
+    width: 33%;
+}
+label{
+    width: 100%;
+}
+
+.todo .tabla{
+    width: 100vw;
+}
+.bIzquierda{
+    width: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
+    /* overflow: auto; */
+}
+.PK{
+    width: 2rem;
+}
+
+.bCentro{
+    /* width: 43%; */
+    /* overflow:auto; */
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.tMes{
+    text-align: center;
+}
+
+.bDerecha{
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 20%;
+    /* overflow: auto; */
+}
+.tDerecha{
+    width: min-content;
+}
+.altura{
+    height: 113px !important;
+}
+.alturaDoble{
+    height: 56.5px !important;
+}
+.altBase{
+    height: 82px;
+}
+.altBaseDos{
+    height: 40px;
 }
