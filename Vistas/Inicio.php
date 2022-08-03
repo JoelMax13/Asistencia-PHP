@@ -15,6 +15,7 @@
 </head>
 <body>
     <?php
+        require("../Controladores/CrearConexion.php");
         require("MenuPrincipal.php");
     ?>
 
