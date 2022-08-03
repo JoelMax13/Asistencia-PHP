@@ -1,10 +1,16 @@
 <?php
+date_default_timezone_set('America/Guayaquil');
 session_start();
-    $_SESSION['registrador'] = "Luis Joel Oña Méndez";
+    $_SESSION['id'] = 8;
+    $_SESSION['registrador'] = "LUIS JOEL OÑA MÉNDEZ";
+    $_SESSION['fechaActual'] = date('Y-m-d'); 
+    $_SESSION['horaActual'] = date('H:i:s');
+    $_SESSION['fechaHoraActual'] = $_SESSION['fechaActual']." ".$_SESSION['horaActual'];
+
     $usuario = "root";
     $contrasena = "";
     $server = "localhost";
-    $db = "asistenciatectotal";
+    $db = "asistencia_tectotal";
     //Puerto Oficina
     $puerto = "3306";
     //  Puerto Casa
@@ -15,5 +21,5 @@ session_start();
     if(!$conexion){
         echo "Error en la conexión con la base de datos.";
     }
+    //session_destroy();
 ?>
-//session_destroy();
