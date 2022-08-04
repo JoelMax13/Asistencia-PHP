@@ -13,16 +13,15 @@
 
     <link href="../Diseno/Sistema.css" type="text/css" rel="stylesheet">
 </head>
-
 <body>
-<?php
-    include ("MenuPrincipal.php");
-    $Pro_Nombre = $_GET['nombre'];
-    $PRO_ID = GetIdProyecto($conexion, $Pro_Nombre);
-?>
+    <?php  
+        include ("MenuPrincipal.php");
+        $Pro_Nombre = $_GET['nombre'];
+        $PRO_ID = GetIdProyecto($conexion, $Pro_Nombre);
+    ?>
     <div class="body">
         <div>
-            <h1>Asistencias</h1>
+            <h1>Horas Extra</h1>
             <label class="infoBasic">
                 <strong>Fecha:</strong>
                 <?php
@@ -37,14 +36,32 @@
             </label>
         </div>
         <hr>
-        <form action="../Controladores/RegistrarAsistencia.php" method="POST">
+        <form action="../Controladores/RegistrarHorasExtra.php" method="POST">
             <input type="text" name="proyecto" value="<?php echo $PRO_ID;?>" hidden>
-            <div class="container A_container">
-                <!-- Mostrar Lista de personas -->
+            <div class="container HE_container">
                 <ul>
-                    <?php
-                        GetUsuariosAsistencia($conexion, $PRO_ID);
-                    ?>
+                    <li class="mb-3 row">
+                        <label class="col-sm-3 col-form-label">Usuario:</label>
+                        <div class="col-sm-9">
+                            <Select name="selectUsPr" class="form-select">
+                                <?php
+                                    GetUsuariosHorasExtra($conexion, $PRO_ID);
+                                ?>
+                            </Select>
+                        </div>
+                    </li>
+                    <li class="mb-3 row">
+                        <label class="col-sm-3 col-form-label">Fecha trabajada:</label>
+                        <div class="col-sm-9">
+                            <input name="fechaHE" type="date" class="form-control" required>
+                        </div>
+                    </li>
+                    <li class="mb-3 row">
+                        <label class="col-sm-3 col-form-label">Horas extra:</label>
+                        <div class="col-sm-9">
+                            <input name="numeroHoras" type="number" class="form-control" required>
+                        </div>
+                    </li>
                 </ul>
                 <button type="submit" class="btn btn-success BtnFinProc">Registrar</button>
             </div>

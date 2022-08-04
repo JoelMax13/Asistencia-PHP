@@ -20,21 +20,20 @@
 
     <div class="body">
         <div class="container">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="http://www.tectotal.com.ec/imagenes/intro(Personalizado).png" class="d-block w-100" alt="...">
+                        <img src="../Imagenes/PrimeraImagen.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://institutodeformacionydesarrollo.org/images/joomlashine/sample/homepage/news_1.jpg" class="d-block w-100" alt="...">
+                        <img src="../Imagenes/SegundaImagen.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://unisalia.com/wp-content/uploads/2020/04/ingenieria_de_petroleos_1_opt.jpg" class="d-block w-100" alt="...">
+                        <img src="../Imagenes/TerceraImagen.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 </html>
