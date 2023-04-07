@@ -1,0 +1,191 @@
+/* Sistema General */
+.mayusculas{
+    text-transform: uppercase;
+}
+nav{
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+     /* height: 10vh; */
+}
+.body{
+    margin-top: 10vh;
+    display: block;
+}
+.imagenMenu{
+    width: 5.5rem;
+}
+.pagEncabezado{
+    padding-bottom: 0.5%;
+}
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #0D5A8E;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+ul{
+    padding: 0rem;
+}
+.infoBasic{
+    width: 100%;
+    margin-left: 5%;
+}
+.BtnFinProc{
+    float:right;
+}
+.container{
+    margin-top: 2rem;
+}
+
+
+/* Crear Usuario */
+.C_U_container{
+    width: 80%;
+}
+.C_U_label{
+    text-align:justify;
+}
+
+/* Asistencia */
+.A_container{
+    width: 70%;
+}
+
+/* Observaciones */
+.O_container{
+    width: 80%;
+}
+
+/* Horas Extra */
+.HE_container{
+    width: 60%;
+}
+
+/* Informes */
+.btns{
+    border-radius: 50%;
+}
+.imagen{
+    width: 10rem;
+}
+.izquierda{
+    width: 25%;
+}
+.centro{
+    /* width: 34%; */
+    text-align: center;
+}
+.derecha{
+    width: 33%;
+}
+
+.todo .tabla{
+    width: 100vw;
+}
+.bIzquierda{
+    max-width: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
+    overflow: auto;
+}
+.PK{
+    width: 2rem;
+}
+
+.bCentro{
+    /* width: 43%; */
+    overflow:auto;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.tMes{
+    text-align: center;
+}
+
+.bDerecha{
+    padding-left: 0%;
+    padding-right: 0%;
+    min-width: 20%;
+    overflow: auto;
+}
+.tDerecha{
+    width: min-content;
+}
+.altura{
+    height: 113px !important;
+}
+.alturaDoble{
+    height: 56.5px !important;
+}
+.altBase{
+    height: 82px;
+}
+.altBaseDos{
+    height: 40px;
+}
+
+@media print {
+    #menuPrincipal{
+        display: none;
+    }
+    .btns{
+        display: none;
+    }
+    /* .body{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    } */
+    table tr td{
+        border: 1px solid;
+    }
+}
+
+.fondoLogin{
+    background-color: #0e6db69f;
+    /*opacity: .5;*/
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.containerLog{
+    padding: 10% 5% 10% 5%;
+}
+#BtnIngresar{
+    color: white;
+    background-color: #5C5470;
+    border-color: #4e4380;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#BtnVerContrasena{
+    background: none;
+    margin: 0;
+    border: none;
+}
+.abajo{
+    padding-top: 5%;    
+}
+.cuadro{ /*Opacidad en un background Color [rgba(... .3)]*/
+    background-color: white;
+    width: 70%;
+    height:max-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1px 1px #DBD8E3, 
+              0 2px 2px #DBD8E3, 
+              0 4px 4px #DBD8E3, 
+              0 6px 6px #DBD8E3, 
+              0 6px 6px #DBD8E3, 
+              0 10px 10px #DBD8E3; 
+}
