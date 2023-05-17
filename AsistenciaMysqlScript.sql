@@ -14,8 +14,8 @@ create table TBL_ACCESO
    PRO_ID               int not null,
    ACS_OBSERVACION      varchar(200),
    primary key (ACS_ID),
-   add constraint foreign key (PRO_ID) references TBL_PROYECTO (PRO_ID),
-   add constraint foreign key (USU_ID) references TBL_USUARIO (USU_ID)
+   constraint foreign key (PRO_ID) references TBL_PROYECTO (PRO_ID),
+   constraint foreign key (USU_ID) references TBL_USUARIO (USU_ID)
 );
 
 /*==============================================================*/
@@ -28,11 +28,11 @@ create table TBL_ASISTENCIA
    OBS_ID               int,
    ASIS_FECHA           date not null,
    ASIS_REGISTRADOR     varchar(100) not null,
-   ASIS_VERIFICACION    bool not null,
+   ASIS_VERIFICACION    boolean not null,
    ASIS_OBSERVACION     varchar(200),
    primary key (ASIS_ID),
-   add constraint foreign key (OBS_ID) references TBL_OBSERVACION (OBS_ID),
-   add constraint foreign key (USPR_ID) references TBL_USUARIO_PROYECTO (USPR_ID)
+   constraint foreign key (OBS_ID) references TBL_OBSERVACION (OBS_ID),
+   constraint foreign key (USPR_ID) references TBL_USUARIO_PROYECTO (USPR_ID)
 );
 
 /*==============================================================*/
@@ -47,7 +47,7 @@ create table TBL_HORASEXTRA
    HEXTRA_REGISTRADOR   varchar(100) not null,
    HEXTRA_NUMHORAS      int not null,
    primary key (HEXTRA_ID),
-   add constraint foreign key (USPR_ID) references TBL_USUARIO_PROYECTO (USPR_ID)
+   constraint foreign key (USPR_ID) references TBL_USUARIO_PROYECTO (USPR_ID)
 );
 
 /*==============================================================*/
@@ -99,6 +99,6 @@ create table TBL_USUARIO_PROYECTO
    USPR_FECHACREACION   date not null,
    USPR_ESTADO          varchar(15) not null,
    primary key (USPR_ID),
-   add constraint foreign key (PRO_ID) references TBL_PROYECTO (PRO_ID),
-   add constraint foreign key (USU_ID) references TBL_USUARIO (USU_ID)
+   constraint foreign key (PRO_ID) references TBL_PROYECTO (PRO_ID),
+   constraint foreign key (USU_ID) references TBL_USUARIO (USU_ID)
 );
