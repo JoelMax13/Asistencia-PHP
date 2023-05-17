@@ -9,7 +9,7 @@
 /*==============================================================*/
 create table TBL_ACCESO
 (
-   ACS_ID               int not null,
+   ACS_ID               int not null auto_increment,
    USU_ID               int not null,
    PRO_ID               int not null,
    ACS_OBSERVACION      varchar(200),
@@ -23,7 +23,7 @@ create table TBL_ACCESO
 /*==============================================================*/
 create table TBL_ASISTENCIA
 (
-   ASIS_ID              int not null,
+   ASIS_ID              int not null auto_increment,
    USPR_ID              int not null,
    OBS_ID               int,
    ASIS_FECHA           date not null,
@@ -40,7 +40,7 @@ create table TBL_ASISTENCIA
 /*==============================================================*/
 create table TBL_HORASEXTRA
 (
-   HEXTRA_ID            int not null,
+   HEXTRA_ID            int not null auto_increment,
    USPR_ID              int not null,
    HEXTRA_FECHAREGISTRO datetime not null,
    HEXTRA_FECHATRABAJO  datetime not null,
@@ -55,7 +55,7 @@ create table TBL_HORASEXTRA
 /*==============================================================*/
 create table TBL_OBSERVACION
 (
-   OBS_ID               int not null,
+   OBS_ID               int not null auto_increment,
    OBS_CODIGO           varchar(3) not null,
    OBS_COMENTARIO       varchar(50) not null,
    OBS_COLOR            varchar(20) not null,
@@ -67,7 +67,7 @@ create table TBL_OBSERVACION
 /*==============================================================*/
 create table TBL_PROYECTO
 (
-   PRO_ID               int not null,
+   PRO_ID               int not null auto_increment,
    PRO_NOMBRE           varchar(100) not null,
    PRO_CLIENTE          varchar(100) not null,
    primary key (PRO_ID)
@@ -78,7 +78,7 @@ create table TBL_PROYECTO
 /*==============================================================*/
 create table TBL_USUARIO
 (
-   USU_ID               int not null,
+   USU_ID               int not null auto_increment,
    USU_CEDULA           varchar(10) not null,
    USU_NOMAPE           varchar(100) not null,
    USU_TELF             varchar(10) not null,
@@ -90,7 +90,7 @@ create table TBL_USUARIO
 /*==============================================================*/
 create table TBL_USUARIO_PROYECTO
 (
-   USPR_ID              int not null,
+   USPR_ID              int not null auto_increment,
    USU_ID               int not null,
    PRO_ID               int not null,
    USPR_CARGO           varchar(25) not null,
