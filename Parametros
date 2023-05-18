@@ -9,6 +9,8 @@ JN - Jornada Nocturna - #ff7c00
 AT - Atraso - #0055ff
 LQ - Licencia sin gose de sueldo - #ff1818
 
+INSERT INTO `tbl_observacion`(`OBS_CODIGO`, `OBS_COMENTARIO`, `OBS_COLOR`) VALUES ('D','DESCANSO','#3cfff6'), ('FJ','FALTA JUSTIFICADA','#23ff00'), ('FI','FALTA INJUSTIFICADA','#fffb00'), ('JN','JORNADA NOCTURNA','#ff7c00'), ('AT','ATRASO','#0055ff'), ('LQ','LICENCIA SIN GOSE DE SUELDO','#ff1818')
+
 
 Respecto a los proyectos:
 El usuario debe crear los proyectos mediante la base de datos.
