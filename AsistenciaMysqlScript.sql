@@ -13,6 +13,7 @@ create table TBL_ACCESO
    USU_ID               int not null,
    PRO_ID               int not null,
    ACS_OBSERVACION      varchar(200),
+   ACS_CONTRASENA      varchar(200),
    primary key (ACS_ID),
    constraint foreign key (PRO_ID) references TBL_PROYECTO (PRO_ID),
    constraint foreign key (USU_ID) references TBL_USUARIO (USU_ID)
