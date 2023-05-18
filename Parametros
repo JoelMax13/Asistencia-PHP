@@ -1,0 +1,10 @@
+Para poder empezar a usar la aplicación es necesario crear un usuario primero desde la base de datos.
+
+Respecto a las observaciones:
+Para esta aplicación se han utilizado los siguientes parámetros.
+D - Descanso - #3cfff6
+FJ - Falta Justificada - #23ff00
+FI - Falta Injustificada - #fffb00
+JN - Jornada Nocturna - #ff7c00
+AT - Atraso - #0055ff
+LQ - Licencia sin gose de sueldo - #ff1818
