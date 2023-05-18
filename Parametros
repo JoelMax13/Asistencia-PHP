@@ -8,3 +8,7 @@ FI - Falta Injustificada - #fffb00
 JN - Jornada Nocturna - #ff7c00
 AT - Atraso - #0055ff
 LQ - Licencia sin gose de sueldo - #ff1818
+
+
+Respecto a los proyectos:
+El usuario debe crear los proyectos mediante la base de datos.
